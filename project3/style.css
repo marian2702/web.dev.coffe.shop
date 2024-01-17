@@ -1,0 +1,74 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: black;
+    background-image: url('coffe.wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+
+}
+.navbar {
+    
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    padding-left: 50;
+    font-size: 90;
+    text-decoration: none;
+}
+.logo a{
+    text-decoration: none;
+    font-family: 'Pacifico', cursive;
+    color: beige;
+}
+.links {
+    list-style-type: none;
+    display: flex;
+}
+
+.links li {
+    margin: 20;
+    padding: 80;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bolder;
+    position: relative;
+    font-size: 25;
+}
+
+.links a::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+
+.links a:hover::before {
+    width: 100%
+}
+
+.content{
+    padding: 60px;
+    margin: 30px;
+    color: aliceblue;
+    font-family: 'Indie Flower', cursive;
+}
